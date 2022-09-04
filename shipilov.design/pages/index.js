@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 import styles from '../styles/Main.module.sass'
+import Button from '../components/Button'
 
 export default function Home() {
   return (
@@ -13,6 +14,36 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+      <div className={styles.heroWrapper}>
+        <div className={styles.heroTitle}>
+          <h1>
+            Hi 👋 I'm Ivan, a product designer, artist, coder
+          </h1>
+          <p>
+            I have a passion to design/developing leading digital products. The last 7 years spent collaborating with awesome professionals, developing top products that changed lives. I'm interested in complex design systems, web3, user/dev experience, math, 3D and engineering. Tech Nation Global Talent Visa.
+          </p>
+          <Button type='button'  children={'Schedule a call 🤙'}/>
+        </div>
+        <div className={styles.avatarWrapper}>
+          <div className={styles.avatarImage}>
+            <Image 
+                  src="/images/avatar.png"
+                  alt="Ivan Sipilov"
+                  width={720}
+                  height={720}
+            />
+            <div className={styles.sunIllustration}>
+              <Image 
+                    src="/images/sun.svg"
+                    alt="Ivan Sipilov"
+                    width={240}
+                    height={240}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
         <div className={styles.backGridWrapper}>
           <div className={styles.backGrid}></div>
           <div className={styles.backGrid}></div>
@@ -21,44 +52,7 @@ export default function Home() {
           <div className={styles.backGrid}></div>
           <div className={styles.backGrid}></div>
         </div>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
       </main>
 
       <footer className={styles.footer}>

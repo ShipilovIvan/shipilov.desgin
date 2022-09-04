@@ -1,9 +1,5 @@
-
-.main
-
-
 .backGridWrapper
-    position: fixed
+    position: absolute
     left: 0%
     top: 0%
     right: 0%
@@ -19,9 +15,6 @@
     flex-wrap: wrap
 
 
-
-
-
 .backGrid
     position: static
     width: 16.7vw
@@ -29,4 +22,60 @@
     background: #494E51
     border-right: 1.5px solid #5b6062
     object-fit: fill
+    z-index: 1
+
+
+.heroTitle
+    max-width: 64vw
+    padding-left: 16.6%
+
+
+
+.heroTitle h1
+    position: relative
     z-index: 10
+    margin: 0
+    line-height: 1
+    font-size: 4rem
+    color: white
+
+.heroTitle p
+    padding-top: 24px
+    padding-bottom: 24px
+    max-width: 56vw
+    position: relative
+    z-index: 10
+    margin: 0
+    line-height: 1.6
+    font-size: 1rem
+    color: white
+    
+
+.heroWrapper
+    display: flex
+    z-index: 30
+    overflow: hidden
+    padding-top: 8%
+    align-items: center
+
+.avatarWrapper
+    padding-bottom: 40px
+
+.avatarImage
+    z-index: 30
+    position: relative
+    right: -6vw
+    display: block
+    height: auto
+    border-style: solid
+    border-width: 1px
+    border-color: #5b6062
+    border-radius: 20000px
+
+    
+.sunIllustration
+    position: absolute
+    left: -80px
+    top: 328px
+
+
