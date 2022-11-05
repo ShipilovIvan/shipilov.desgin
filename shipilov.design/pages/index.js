@@ -3,6 +3,8 @@ import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 import styles from '../styles/Main.module.sass'
 import Button from '../components/Button'
+import PressCard from '../components/PressCard'
+import UIVideo from '../components/UIVideo'
 
 export default function Home() {
   return (
@@ -14,6 +16,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+      <div>
+          <UIVideo />
+        </div>
       <div className={styles.heroWrapper}>
         <div className={styles.heroTitle}>
           <h1>
@@ -24,6 +29,7 @@ export default function Home() {
           </p>
           <Button type='button'  children={'Schedule a call 🤙'}/>
         </div>
+
         <div className={styles.avatarWrapper}>
           <div className={styles.avatarImage}>
             <Image 
@@ -53,6 +59,16 @@ export default function Home() {
           <div className={styles.backGrid}></div>
         </div>
 
+        <div className={styles.pressBlogWrapper}>
+          <div className={styles.pressTitle}>
+            <p>Projects In Press</p>
+          </div>
+          <PressCard logo={"/images/TechCrunch.svg"} alt={"Ivan Sipilov"}/>
+          <PressCard logo={"/images/Bussines Insider.svg"} alt={"Ivan Sipilov"}/>
+          <PressCard logo={"/images/NYP.svg"} alt={"Ivan Sipilov"}/>
+          <PressCard logo={"/images/WSJ.svg"} alt={"Ivan Sipilov"}/>
+          <PressCard logo={"/images/Meduza.svg"} alt={"Ivan Sipilov"}/>
+        </div>
       </main>
 
       <footer className={styles.footer}>
